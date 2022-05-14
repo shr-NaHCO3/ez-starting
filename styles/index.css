@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+body{
+    background-color: #252525;
+}
+html,body{
+	height: 100%;
+}
+
+
+
+
+
+.select-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+
+    height: 100%;
+}
+.select{
+    width: 514px;
+    height: 40px;
+    outline-style: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+
+    background-color: #454545;
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.select:hover{
+    background-color: #d4d4d4;
+}
+.select:focus{
+    background-color: #ffffff;
+}
+
+
+
+
+/* 书签栏 */
+.fab-sites{
+    width: 514px;
+    padding-top: 24px;
+    height: 254px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* 书签卡 */
+.fab-site-card{
+    width: 114px;
+    height: 114px;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.fab-site-card:hover{
+    background-color: #555555;
+}
+.site-card-settings{
+    width: 0;
+    height: 0;
+    border-top: 30px solid rgba(0,0,0,0);
+    border-left: 30px solid transparent;
+    
+    align-self: flex-end;
+
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.site-card-settings::before{
+    content: "···";
+    font-size: 20px;
+    color: #00000000;
+    position: relative;
+    left: -15px;
+    top: -35px;
+}
+.fab-site-card:hover .site-card-settings{
+    border-top: 30px solid #444444;
+}
+.fab-site-card:hover .site-card-settings::before{
+    color: #ffffff;
+}
+.site-card-img{
+    width: 50px;
+    height: 50px;
+    background-color: #444444;
+    border-radius: 16px;
+    
+    align-self: center;
+}
+.site-card-text{
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    padding-top: 5px;
+
+    align-self: center;
+}

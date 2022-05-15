@@ -89,6 +89,24 @@ html,body{
     left: -15px;
     top: -35px;
 }
+.site-card-adder{
+    width: 0;
+    height: 0;
+    border-top: 30px solid rgba(0,0,0,0);
+    border-left: 30px solid transparent;
+    
+    align-self: flex-end;
+
+    transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.site-card-adder::before{
+    content: "···";
+    font-size: 20px;
+    color: #ffffff00;
+    position: relative;
+    left: -15px;
+    top: -35px;
+}
 .fab-site-card:hover .site-card-settings{
     border-top: 30px solid #444444;
 }

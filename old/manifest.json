@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "简单起始",
+  "version": "0.0.2",
+  "description": "make start ez",
+  "author": "shr-NaHCO3",
+  "chrome_url_overrides": {
+		"newtab": "new-tab-ext.html"
+	}
+}

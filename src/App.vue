@@ -1,10 +1,10 @@
 <template>
-    <div class="select-box">
-      <input type="text" id="select" class="select" placeholder="搜索"/>
-      <div class="fab-sites">
-          <fabSiteCard />
-      </div>
-    </div>  
+  <div class="select-box">
+    <input type="text" id="select" class="select" placeholder="搜索"/>
+    <div class="fab-sites">
+      <fabSiteCard />
+    </div>
+  </div>  
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
   name: 'App',
   components: {
     fabSiteCard
-}
+  }
 }
 </script>
 
@@ -43,15 +43,16 @@ export default {
 }
 .select:focus{
   background-color: #ffffff;
+  box-shadow: 0px 0px 7px #454545;
 }
 
 /* 书签栏 */
 .fab-sites{
-    width: 514px;
-    padding-top: 24px;
-    height: 254px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  width: 514px;
+  padding-top: 24px;
+  height: 254px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 </style>
